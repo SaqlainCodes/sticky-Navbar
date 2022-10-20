@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sticky Menu</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="header">
+      <img src="img/Logo.png" />
+    </div>
+    <nav id="menu-bar" class="">
+      <ul>
+        <li>Home</li>
+        <li>Contact Us</li>
+        <li>About Us</li>
+        <li>Services</li>
+        <li>Gallery</li>
+      </ul>
+    </nav>
+
+    <div id="container">
+      <h1>ABOUT US</h1>
+      <img src="img/jean-philippe-delberghe-T5BF4OyQLwU-unsplash 1.png" />
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates
+        dicta hic modi voluptatem enim maxime eveniet fugit eligendi omnis
+        ullam, ut aspernatur possimus excepturi quae accusamus est facere veniam
+        voluptatibus voluptas? Esse eveniet earum officiis quaerat, illum, minus
+        perferendis veniam laboriosam ad blanditiis incidunt magnam porro
+        numquam odio. Unde, veniam! Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Voluptates dicta hic modi voluptatem enim maxime
+        eveniet fugit eligendi omnis ullam, ut aspernatur possimus excepturi
+        quae accusamus est facere veniam voluptatibus voluptas? Esse eveniet
+        earum officiis quaerat, illum, minus perferendis veniam laboriosam ad
+        blanditiis incidunt magnam porro numquam odio. Unde, veniam! Lorem ipsum
+        dolor sit amet, consectetur adipisicing elit. Voluptates dicta hic modi
+        voluptatem enim maxime eveniet fugit eligendi omnis ullam, ut aspernatur
+        possimus excepturi quae accusamus est facere veniam voluptatibus
+        voluptas? Esse eveniet earum officiis quaerat, illum, minus perferendis
+        veniam laboriosam ad blanditiis incidunt magnam porro numquam odio.
+        Unde, veniam! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Voluptates dicta hic modi voluptatem enim maxime eveniet fugit eligendi
+        omnis ullam, ut aspernatur possimus excepturi quae accusamus est facere
+        veniam voluptatibus voluptas? Esse eveniet earum officiis quaerat,
+        illum, minus perferendis veniam laboriosam ad blanditiis incidunt magnam
+        porro numquam odio. Unde, veniam!
+      </p>
+    </div>
+
+    <script>
+      window.addEventListener('scroll', function () {
+        let navbar = document.getElementById('menu-bar')
+        if (window.pageYOffset >= 130) {
+          navbar.classList.add('sticky')
+        } else {
+          navbar.classList.remove('sticky')
+        }
+      })
+    </script>
+  </body>
+</html>
